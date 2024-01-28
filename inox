@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro Zakaria</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    * {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+/* #850606 */
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    header#header {
+      height: 120px;
+      width: 100%;
+      background-color: #850606;
+    }
+
+    #header img {
+      height: 90px;
+    }
+
+
+    footer#footer {
+      height: 180px;
+      width: 100%;
+      text-align: center;
+    }
+
+    #map {
+      margin-top: 30px;
+      height: 160px;
+    }
+
+    #main {
+      flex-grow: 1;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #main p, #main a {
+      display: flex;
+      align-items: center;
+      margin: 16px 0;
+      color: #000000;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    .contact-icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+    }
+
+    .facebook-icon {
+      margin-top: -4px;
+    }
+
+    .divider {
+      width: 50px;
+      height: 4px;
+      margin-top: 6px;
+      background-color: #850606;
+    }
+
+    .button {
+      background-color: #850606;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 3px;
+      display: inline-flex;
+    }
+
+    .button .icon {
+      fill: #ffffff;
+      margin-right: 10px;
+      width: 18px;
+    }
+
+    .svg-icon {
+      filter: invert(100%);
+    }
+
+    .whatsapp {
+      height: 22px;
+    }
+
+    a.whatsapp-link {
+      color: #27ae60!important;
+    }
+
+    a.facebook-link {
+      color: #2980b9!important;
+    }
+
+    a.gmail-link {
+      color: #c0392b!important;
+    }
+  </style>
+
+  <style>
+    .mapouter{position:relative;text-align:right;height:500px;width:100%;}
+    .gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}
+  </style>
+
+</head>
+<body>
+  <header id="header" class="flex-center">
+    <img loading="lazy" src="logo_edited.svg" alt="Electro Zakaria Logo">
+  </header>
+  <div id="main" class="flex-center">
+    <h2>Contact Us</h2>
+    <a href="tel:+212661722578"><img class="contact-icon" src="https://unpkg.com/@fortawesome/fontawesome-free@5.13.0/svgs/solid/phone-alt.svg" alt="Phone" /> (+212) 06 61 72 25 78</a>
+    <a class="whatsapp-link" href="https://wa.me/212661722578"><img class="contact-icon whatsapp" src="whatsapp.svg" alt="Whatsapp" /> (+212) 06 61 72 25 78</a>
+    <a class="gmail-link" href="mailto:zakaria.hamraoui@live.fr?subject=Contact+Carte+Visit"><img class="contact-icon" src="envelope.svg" alt="Mail" /> zakaria.hamraoui@live.fr</a>
+    <a class="facebook-link" href="https://fb.com/zaki.hamraoui"><img class="contact-icon facebook-icon" src="facebook-f.svg" alt="Facebook" /> facebook.com/zaki.hamraoui</a>
+
+    <span class="divider"></span>
+
+    <h3>Adresse</h3>
+    <p style="margin: 0;">32 rue Chouaib Doukkali, <br> Khouribga, Maroc</p>
+  </div>
+  <footer id="footer">
+    <a target="_blanc" href="https://www.google.com/maps/place/Electro-ZAKARIA/@32.8857927,-6.9152241,17z/data=!4m13!1m7!3m6!1s0xda427f85653b7c3:0xb89f756576cfe70d!2s32+Rue+Cheikh+Chouaib+Doukkali,+Khouribga,+Maroc!3b1!8m2!3d32.8857882!4d-6.9130354!3m4!1s0xda427f8fa008531:0xe2f12fc91f9d36ff!8m2!3d32.8857882!4d-6.9130354" class="button flex-center">
+      <img class="icon svg-icon" src="https://unpkg.com/@fortawesome/fontawesome-free@5.13.0/svgs/solid/location-arrow.svg" alt="Facebook" />
+      GPS
+    </a>
+    <div id="map">
+      <div class="gmap_canvas">
+        <iframe width="100%" height="500" src="https://maps.google.com/maps?q=Electro-ZAKARIA%2032%20Rue%20Cheikh%20Chouaib%20Doukkali%2C%20Khouribga%2C%20Maroc&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
